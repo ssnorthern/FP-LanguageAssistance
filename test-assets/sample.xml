@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry_list version="1.0">
+    <entry id="test[1]">
+        <hw hindex="1">test</hw>
+        <pr>ˈtɛst</pr>
+        <fl>transitive verb</fl>
+        <def>
+            <dt>
+                :
+                <ref-link>examinar</ref-link>
+                ,
+                <ref-link>evaluar</ref-link>
+            </dt>
+        </def>
+        <def>
+            <vt>vi</vt>
+            <dt>:hacer pruebas</dt>
+        </def>
+        <ref-link>test</ref-link>
+        <ref-link>test</ref-link>
+    </entry>
+    <entry id="test[2]">
+        <hw hindex="2">test</hw>
+        <fl>noun</fl>
+        <def>
+            <dt>
+                :
+                <ref-link>prueba</ref-link>
+                <gl>feminine</gl>
+                ,
+                <ref-link>examen</ref-link>
+                <gl>masculine</gl>
+                , test
+                <gl>masculine</gl>
+                <vi>to put to the test : poner a prueba</vi>
+            </dt>
+        </def>
+        <ref-link>test</ref-link>
+        <ref-link>test</ref-link>
+    </entry>
+    <entry id="test">
+        <hw>test</hw>
+        <fl>masculine noun</fl>
+        <def>
+            <dt>:test</dt>
+        </def>
+        <example>
+            a la salida de la discoteca los sometían a tests de alcoholemia
+        </example>
+        <example>
+            la Vuelta a Suiza fue su último test antes del Tour de Francia
+        </example>
+        <example>
+            hay gente que desconfía de los test psicológicos
+        </example>
+        <example>
+            en este test se han de marcar las respuestas con lápiz
+        </example>
+        <example>test de inteligencia</example>
+        <example>examen tipo test</example>
+        <synant>
+            <synonym>
+                <syno>examen</syno>
+                <syno>ensayo</syno>
+                <br/>
+            </synonym>
+        </synant>
+    </entry>
+    <entry id="test tube">
+        <hw>test tube</hw>
+        <fl>noun</fl>
+        <def>
+            <dt>
+                :
+                <ref-link>probeta</ref-link>
+                <gl>feminine</gl>
+                ,
+                <ref-link>tubo</ref-link>
+                <gl>masculine</gl>
+                de ensayo
+            </dt>
+        </def>
+        <ref-link>test tube</ref-link>
+        <ref-link>test tube</ref-link>
+    </entry>
+</entry_list>
