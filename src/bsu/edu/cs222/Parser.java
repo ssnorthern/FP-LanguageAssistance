@@ -32,4 +32,8 @@ public class Parser {
         return entries;
     }
 
+    public void createEntries() {
+
+    }
+
 }

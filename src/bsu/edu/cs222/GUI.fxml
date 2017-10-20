@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsu.edu.cs222.Controller">
+    <children>
+        <Button layoutX="221.0" layoutY="336.0" mnemonicParsing="false" onAction="#synonyms" text="Synonyms" />
+        <Button layoutX="315.0" layoutY="336.0" mnemonicParsing="false" onAction="#antonyms" text="Antonyms" />
+        <Button layoutX="412.0" layoutY="336.0" mnemonicParsing="false" onAction="#urbanDictionary" text="Urban Dictionary" />
+        <Button layoutX="42.0" layoutY="336.0" mnemonicParsing="false" onAction="#definition" text="Definition" />
+        <Button layoutX="549.0" layoutY="336.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+        <TextField fx:id="Input" layoutX="170.0" layoutY="76.0" prefHeight="27.0" prefWidth="215.0" promptText="Ex. Hand" />
+        <TextArea fx:id="Output" editable="false" layoutX="61.0" layoutY="125.0" prefHeight="177.0" prefWidth="319.0" promptText="Ex. N. (1) A part of the arm connected to the wrist. ">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font></TextArea>
+        <Label layoutX="170.0" layoutY="23.0" text="Language Assistant">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Label>
+        <SplitMenuButton fx:id="DesiredLanguage" layoutX="412.0" layoutY="187.0" mnemonicParsing="false" text="Desired Language">
+            <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+            </items>
+        </SplitMenuButton>
+        <SplitMenuButton fx:id="Language" layoutX="14.0" layoutY="76.0" mnemonicParsing="false" text="Your Language">
+            <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+            </items>
+        </SplitMenuButton>
+        <Button layoutX="135.0" layoutY="336.0" mnemonicParsing="false" onAction="#translate" text="Translate" />
+    </children>
+</AnchorPane>
