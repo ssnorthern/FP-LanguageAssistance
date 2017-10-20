@@ -10,12 +10,13 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URL;
+import java.net.URLConnection;
 import java.util.ArrayList;
-import java.util.List;
 
 public class Parser {
 
-    public List<Entries> parse(InputStream input) throws IOException, SAXException {
+    public String parseSpanishToEnglish(InputStream input) throws IOException, SAXException {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = null;
         try {
@@ -25,15 +26,25 @@ public class Parser {
         }
         Document document = builder.parse(input);
         NodeList entryItems = document.getElementsByTagName("entry");
-        List<Entries> entries = new ArrayList<>();
-        for (int i = 0; i < entryItems.getLength(); i++) {
-            entries.add(new Entries());
+        Element entry = (Element)entryItems.item(0);
+        NodeList refLinks = entry.getElementsByTagName("ref-link");
+        Element refLink = (Element)refLinks.item(0);
+        return refLink.getTextContent();
+    }
+
+    public String parseDefinition(InputStream input) throws IOException, SAXException {
+        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder builder = null;
+        try {
+            builder = factory.newDocumentBuilder();
+        } catch (ParserConfigurationException e) {
+            throw new IOException(e);
         }
-        return entries;
+        Document document = builder.parse(input);
+        NodeList entryItems = document.getElementsByTagName("entry");
+        Element entry = (Element)entryItems.item(0);
+        NodeList dts = entry.getElementsByTagName("dt");
+        Element dt = (Element)dts.item(0);
+        return dt.getTextContent();
     }
-
-    public void createEntries() {
-
-    }
-
 }
